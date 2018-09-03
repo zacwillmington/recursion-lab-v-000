@@ -100,7 +100,7 @@ function printString(string) {
    substring = string.substring(1, string.length);
   // Invoke printString() from within, passing in the remainder of the previous string.
 	if(substring){
-  	printString(substring);
+  	     printString(substring);
 	}else{
 		return true
 	}
