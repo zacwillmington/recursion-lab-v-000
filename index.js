@@ -13,3 +13,10 @@ function printString(string) {
 }
 
 printString("pizza");// Code your solution here!
+
+
+function reverseString(string1){
+    
+}
+
+reverseString("hello")
