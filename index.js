@@ -13,4 +13,3 @@ function printString(string) {
 }
 
 printString("pizza");// Code your solution here!
-

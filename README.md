@@ -105,8 +105,8 @@ function printString(string) {
 }
 
 printString("pizza");
-```
 
+```
 Uh oh, a wild infinite loop appeared! Remember, we always need to find the base case in order to stop our recursion once its mission is accomplished. In this case, our function's recursive work will be complete once there are no remaining letters to shift to the left, or, in other words, once we're down to the last character in the string. At that point, we can just print out the final character and exit!
 
 ```js
