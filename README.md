@@ -101,8 +101,6 @@ function printString(string) {
   // Invoke printString() from within, passing in the remainder of the previous string.
 	if(substring){
   	     printString(substring);
-	}else{
-		
 	}
 }
 
