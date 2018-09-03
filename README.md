@@ -76,17 +76,34 @@ myString = 'zza';
 Luckily for us, there's a wonderfully compact way to accomplish this wizardry with recursion. Consulting our handy three-step technique above, it appears we're onto the third and final phase: rewording the function to call itself. What if, instead of printing out multiple characters in the same pass, the function printed out `myString[0]`, shifted every remaining character one slot to the left, and then *invoked itself with the new, shortened string?!* Let's see how that would look in JavaScript:
 
 ```js
+// function printString(string) {
+//   let substring;
+// 
+//   // Print out the current first character in the string.
+//   console.log(string[0]);
+// 
+//   // Store the remainder of the string in the 'substring' variable.
+//   substring = string.substring(1, string.length);
+// 
+//   // Invoke printString() from within, passing in the remainder of the previous string.
+//   printString(substring);
+// }
+// 
+// printString("pizza");
 function printString(string) {
   let substring;
-
+	
   // Print out the current first character in the string.
   console.log(string[0]);
 
   // Store the remainder of the string in the 'substring' variable.
-  substring = string.substring(1, string.length);
-
+   substring = string.substring(1, string.length);
   // Invoke printString() from within, passing in the remainder of the previous string.
-  printString(substring);
+	if(substring){
+  	printString(substring);
+	}else{
+		return true
+	}
 }
 
 printString("pizza");
