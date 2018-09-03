@@ -102,7 +102,7 @@ function printString(string) {
 	if(substring){
   	     printString(substring);
 	}else{
-		return true
+		
 	}
 }
 
