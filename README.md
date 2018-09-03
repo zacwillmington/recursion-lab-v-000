@@ -78,21 +78,21 @@ Luckily for us, there's a wonderfully compact way to accomplish this wizardry wi
 ```js
 // function printString(string) {
 //   let substring;
-// 
+//
 //   // Print out the current first character in the string.
 //   console.log(string[0]);
-// 
+//
 //   // Store the remainder of the string in the 'substring' variable.
 //   substring = string.substring(1, string.length);
-// 
+//
 //   // Invoke printString() from within, passing in the remainder of the previous string.
 //   printString(substring);
 // }
-// 
+//
 // printString("pizza");
 function printString(string) {
   let substring;
-	
+
   // Print out the current first character in the string.
   console.log(string[0]);
 
